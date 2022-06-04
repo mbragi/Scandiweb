@@ -1,0 +1,10 @@
+
+.product-Card-inner{
+ transition: transform .07s ease-out;
+}
+
+.product-Card:hover .product-Card-inner{
+   background: #ffffff;
+   transform: translate(-3px ,-5px);
+   cursor: pointer;
+  }
