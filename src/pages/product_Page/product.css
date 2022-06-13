@@ -5,7 +5,6 @@
  flex-wrap: nowrap;
  overflow: hidden;
  justify-content: space-evenly;
- /* align-items: center; */
 }
 .left{
  width: 60%;
@@ -19,13 +18,12 @@
  flex-direction: column;
  width: 50%;
  position: relative;
- /* background-color: aqua; */
  align-items: flex-start;
  height: 50vh;
 }
 .selected-product{
  width:40%;
- height: 70vh;
+ height: 65vh;
  display: flex;
  position: absolute;
  top: 5.5rem;
@@ -39,28 +37,17 @@
  flex-direction: column;
  position: relative;
  right: 6%;
- /* background-color: aquamarine; */
 }
 
-.size{
+.inputs{
  display: flex;
- /* background: blanchedalmond; */
-margin-left: -0.5rem;
-
-}
-.size-input{
- width: 1.5rem;
- margin-left: 0.5rem;
- height: 2rem;
- 
-}
-.color {
- display: flex;
+ position: absolute;
  margin-left: -0.5rem;
+ top: 1rem;
 }
 
-.color-input {
- width: 1.5rem;
- margin-left: 0.5rem;
- height: 2rem;
+.inputs-Section{
+ position: relative;
+ display: block;
+ height: 4rem;
 }

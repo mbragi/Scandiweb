@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { Headers, Inputbutton } from "../../components/StyledElements/Elements";
 import Navigation from "../../components/Navigation/Navigation";
 import Grey from "../../assests/Grey.png";
 import product from "../../assests/product.png";
@@ -29,46 +30,89 @@ class Product extends Component {
             </div>
           </div>
           <div className="right">
-            <div>
-              <h4>Apollo</h4>
-              <p>Running Short</p>
+            <div className="inputs-Section">
+              <Headers>Apollo</Headers>
+              <p
+                className="inputs"
+                style={{
+                  left: "7px",
+                  top: "2rem",
+                }}
+              >
+                Running Short
+              </p>
             </div>
             <div>
-              <span>
-                <h5>SIZE:</h5>
+              <span className="inputs-Section">
+                <Headers>SIZE:</Headers>
                 <div
                   className="
-                size"
+                  inputs"
                 >
-                  <input className="size-input" placeholder="XS" name="" />
-                  <input className="size-input" placeholder="S" name="" />
-                  <input className="size-input" placeholder="M" name="" />
-                  <input className="size-input" placeholder="L" name="" />
+                  <Inputbutton>XS</Inputbutton>
+                  <Inputbutton>S</Inputbutton>
+                  <Inputbutton>M</Inputbutton>
+                  <Inputbutton>L</Inputbutton>
                 </div>
               </span>
-              <span>
-                <h5>COLOR:</h5>
-                <div className="color">
-                  <input className="color-input" name="" type="" />
-                  <input className="color-input" name="" type="" />
-                  <input className="color-input" name="" type="" />
+              <span className="inputs-Section">
+                <Headers>COLOR:</Headers>
+                <div className="inputs">
+                  <Inputbutton
+                    style={{
+                      backgroundColor: "green",
+                      border: "none",
+                      width: "1.5rem",
+                      height: "1.5rem",
+                      marginLeft: "0.2rem",
+                    }}
+                  />
+                  <Inputbutton
+                    style={{
+                      backgroundColor: "green",
+                      border: "none",
+                      width: "1.5rem",
+                      height: "1.5rem",
+                      marginLeft: "0.2rem",
+                    }}
+                  />
+                  <Inputbutton
+                    style={{
+                      backgroundColor: "green",
+                      border: "none",
+                      width: "1.5rem",
+                      height: "1.5rem",
+                      marginLeft: "0.2rem",
+                    }}
+                  />
                 </div>
               </span>
 
-              <div className="price">
-                <h5>PRICE:</h5>
-                <h4>$50.00</h4>
+              <span className="inputs-Section">
+                <Headers>PRICE:</Headers>
+                <div
+                  className="inputs"
+                  style={{ top: "-0.1rem", left: "0.5rem", height: "0rem" }}
+                >
+                  <Headers>$50.00</Headers>
+                </div>
+              </span>
+              <div>
+                <Inputbutton
+                  style={{
+                    width: "60%",
+                    marginLeft: "3rem",
+                    backgroundColor:'#5ece7b',
+                    color:'#ffff',
+                    border:'none'
+                  }}
+                >
+                  ADD TO CART
+                </Inputbutton>
               </div>
               <div>
-                <input
-                  className="submit"
-                  type=""
-                  placeholder="ADD TO CART"
-                ></input>
-              </div>
-              <div>
-                <p>
-                  Find stunning women's cocktail dresses and paryy dresses.
+                <p  style={{width:'90%'}}>
+                  Find stunning women's cocktail dresses and party dresses.
                   Stand out in lace and metallic cocktail dresses and party
                   dresses from all your favourite brands.
                 </p>
