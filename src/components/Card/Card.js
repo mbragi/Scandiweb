@@ -1,6 +1,7 @@
 import { Component } from "react";
-import { cardDatas } from "./Data";
+import { cardDatas } from "../../utils/Data";
 import "./Card.css";
+import Vector from "../../assests/Vector.png";
 
 class Card extends Component {
   render() {
@@ -10,7 +11,7 @@ class Card extends Component {
           style={{
             display: "flex",
             flexDirection: "row",
-            width: "90%",
+            width: "100%",
             flexWrap: "wrap",
             justifyContent: "space-evenly",
             padding: "1rem",
@@ -28,13 +29,20 @@ class Card extends Component {
                   <img src={cardData.Image} alt="product" />
                 </div>
                 <div className="product-details" style={{ marginTop: "1rem" }}>
-                  <div className="product-Name">{cardData.title}
-                  
+                  <div className="product-Name">
+                    {cardData.title}
+                    <div
+                      className="icon"
+                      style={{ 
+                        background: "#5ece7b", }}
+                    >
+                      <img src={Vector} alt="Cart" />
+                    </div>
                   </div>
-                  <h4 className="product-price" style={{}}>
-                    {cardData.price}
-                  </h4>
                 </div>
+                <h4 className="product-price">
+                  {cardData.price}
+                </h4>
               </div>
             </div>
           ))}

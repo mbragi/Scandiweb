@@ -2,28 +2,19 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 const SectionContainer = styled.section`
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 14rem;
-  padding: 0;
+  height: 10rem;
+  width:100%
 `;
 const SectionWriteup = styled.h2`
-  padding: 0;
-  // color: #ffffff;
   position: absolute;
-  //width: 0rem;
-  //height: 364px;
-  left: 3rem;
+  left: 4.5rem;
   top: 5rem;
-
-  //font-family: 'DM Sans';
-  font-style: normal;
   font-weight: 600;
   font-size: 2rem;
   line-height: 30px;
   color: #1d1f22;
 `;
-export default class Carousel extends Component {
+export default class Title extends Component {
   render() {
     return (
       <SectionContainer>

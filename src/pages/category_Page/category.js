@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import React, { Component } from "react";
-import Navigation from "../components/Navigation/Navigation";
-import Carousel from "../components/Carousel/Carousel";
-import Card from "../components/Card/Card";
+import Navigation from "../../components/Navigation/Navigation";
+
+import Card from "../../components/Card/Card";
+import Title from "../../components/Title/Title";
 
 const ContainerList = styled.div`
 
@@ -16,7 +17,7 @@ export default class Category extends Component {
     return (
       <div>
         <Navigation />
-        <Carousel/>
+        <Title/>
         <ContainerList>
           <Card/>
         </ContainerList>
