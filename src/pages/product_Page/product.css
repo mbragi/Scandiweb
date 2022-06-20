@@ -6,11 +6,13 @@
  overflow: hidden;
  justify-content: space-evenly;
 }
+
 .left{
  width: 60%;
  display: flex;
  flex-direction: row;
 }
+
 .product-option{
  justify-content: space-between;
  display: flex;
@@ -21,6 +23,7 @@
  align-items: flex-start;
  height: 50vh;
 }
+
 .selected-product{
  width:40%;
  height: 65vh;
@@ -29,6 +32,7 @@
  top: 5.5rem;
  left: 20%;
 }
+
 .right {
  margin-top: 3rem;
  padding: 1rem;
@@ -50,4 +54,27 @@
  position: relative;
  display: block;
  height: 4rem;
+}
+
+.color-button {
+ background-color:  #d3d2d5;
+ border: none;
+ width: 1.5rem;
+ height: 1.5rem;
+ margin-left: 0.2rem;
+}
+
+.color-button1 {
+     background-color:   #2a2a2a;
+     border: none;
+     width: 1.5rem;
+     height: 1.5rem;
+     margin-left: 0.2rem;
+}
+.color-button2 {
+     background-color: #0F644F;
+     border: none;
+     width: 1.5rem;
+     height: 1.5rem;
+     margin-left: 0.2rem;
 }

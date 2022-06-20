@@ -1,8 +1,14 @@
 import { Component } from "react";
 import Navigation from "../../components/Navigation/Navigation";
-import { SectionContainer, SectionWriteup } from "../../components/StyledElements/Elements";
-import product from "../../assests/product.png";
+import {
+  SectionContainer,
+  SectionWriteup,
+  Headers,
+  Inputbutton,
+} from "../../components/StyledElements/Elements";
+
 import "./cart.css";
+import { cartDatas } from "../../utils/cartData";
 
 export default class Cart extends Component {
   render() {
@@ -12,37 +18,66 @@ export default class Cart extends Component {
         <SectionContainer style={{ height: "5rem" }}>
           <SectionWriteup style={{ top: "2.5rem" }}>CART</SectionWriteup>
         </SectionContainer>
-        <hr />
         <section className="cart-layout">
-          <div className="section">
-            <div className="side-A"></div>
-            <div className="side-B">
-              <div className="number-of-items">
-                <button>+</button>
-                <h4>1</h4>
-                <button>-</button>
-              </div>
+          {cartDatas.map((cartData) => {
+            return (
               <div>
-                <img className="selected-item" src={product} alt="cart-item" />
-                <div></div>
+                <hr />
+                <div className="section" key={cartData.id}>
+                  <div className="side-A">
+                    <div className="product-details">
+                      <Headers className="title-header">
+                        {cartData.title}
+                      </Headers>
+                      <p className="title-paragraph">{cartData.productTitle}</p>
+                      <Headers className="product-price">
+                        {cartData.price}
+                      </Headers>
+                    </div>
+                    <section className="size">
+                      <Headers>SIZE</Headers>
+                      <div className="Buttons">
+                        {cartData.availableSizes.map((availableSize) => {
+                          return (
+                            <Inputbutton>{availableSize.size}</Inputbutton>
+                          );
+                        })}
+                      </div>
+                    </section>
+                    <div className="color">
+                      <Headers>COLOR</Headers>
+                      <div className="Buttons">
+                        <Inputbutton className="color-button"/>
+                        <Inputbutton className="color-button1"/>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="side-B">
+                    <div className="number-of-items">
+                      <button>+</button>
+                      <h4>{cartData.quantity}</h4>
+                      <button>-</button>
+                    </div>
+                    <div>
+                      <img
+                        className="selected-item"
+                        src={cartData.product}
+                        alt="cart-item"
+                      />
+                      <div>
+                        <img
+                          src={cartData.back}
+                          alt="back"
+                          style={{ Color: "black" }}
+                        />
+                        <img src={cartData.froward} alt="forward" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <hr />
-          <div className="section">
-            <div className="side-A"></div>
-            <div className="side-B">
-              <div className="number-of-items">
-                <button>+</button>
-                <h4>1</h4>
-                <button>-</button>
-              </div>
-              <div>
-                <img className="selected-item" src={product} alt="cart-item" />
-                <div></div>
-              </div>
-            </div>
-          </div>
+            );
+          })}
           <hr />
           <div className="section"></div>
         </section>

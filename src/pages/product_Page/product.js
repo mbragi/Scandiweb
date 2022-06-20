@@ -58,33 +58,9 @@ class Product extends Component {
               <span className="inputs-Section">
                 <Headers>COLOR:</Headers>
                 <div className="inputs">
-                  <Inputbutton
-                    style={{
-                      backgroundColor: "green",
-                      border: "none",
-                      width: "1.5rem",
-                      height: "1.5rem",
-                      marginLeft: "0.2rem",
-                    }}
-                  />
-                  <Inputbutton
-                    style={{
-                      backgroundColor: "green",
-                      border: "none",
-                      width: "1.5rem",
-                      height: "1.5rem",
-                      marginLeft: "0.2rem",
-                    }}
-                  />
-                  <Inputbutton
-                    style={{
-                      backgroundColor: "green",
-                      border: "none",
-                      width: "1.5rem",
-                      height: "1.5rem",
-                      marginLeft: "0.2rem",
-                    }}
-                  />
+                  <Inputbutton className="color-button" />
+                  <Inputbutton className="color-button1" />
+                  <Inputbutton className="color-button2" />
                 </div>
               </span>
 
@@ -102,16 +78,16 @@ class Product extends Component {
                   style={{
                     width: "60%",
                     marginLeft: "3rem",
-                    backgroundColor:'#5ece7b',
-                    color:'#ffff',
-                    border:'none'
+                    backgroundColor: "#5ece7b",
+                    color: "#ffff",
+                    border: "none",
                   }}
                 >
                   ADD TO CART
                 </Inputbutton>
               </div>
               <div>
-                <p  style={{width:'90%'}}>
+                <p style={{ width: "90%" }}>
                   Find stunning women's cocktail dresses and party dresses.
                   Stand out in lace and metallic cocktail dresses and party
                   dresses from all your favourite brands.
