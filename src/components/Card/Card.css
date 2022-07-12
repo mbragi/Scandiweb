@@ -1,4 +1,21 @@
+
+.category{
+   display: flex;
+   width: 100%;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-evenly
+}
+.product-Card{
+   margin: 1rem;
+   width: fit-content
+}
+img{
+  max-width: 100%;
+}
+
 .product-Card-inner{
+   width: 100%;
    background: floralwhite;
    transition: transform .07s ease-in-out;
 }
@@ -20,6 +37,7 @@
    position:relative;
 }
 
+
 .icon{
    border-radius: 50%;
    width: 2.5rem;
@@ -31,4 +49,5 @@
    align-items: center;
    justify-content: center;
    visibility: hidden;
+   background: #5ece7b
 }

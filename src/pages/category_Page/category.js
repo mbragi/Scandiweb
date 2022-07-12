@@ -1,19 +1,18 @@
 import React, { Component } from "react";
 import Navigation from "../../components/Navigation/Navigation";
-import Card from "../../components/Card/Card";
 import Title from "../../components/Title/Title";
 import { ContainerList } from "../../components/StyledElements/Elements";
-
-
+import "./category.css";
+import CardWithDataComponent from "../../utils/graphql/cardDataComponent";
 
 export default class Category extends Component {
   render() {
     return (
-      <div>
+      <div className="PNP">
         <Navigation />
-        <Title/>
+        <Title />
         <ContainerList>
-          <Card/>
+          <CardWithDataComponent />
         </ContainerList>
       </div>
     );

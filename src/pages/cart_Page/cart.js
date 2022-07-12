@@ -30,7 +30,7 @@ export default class Cart extends Component {
                         {cartData.title}
                       </Headers>
                       <p className="title-paragraph">{cartData.productTitle}</p>
-                      <Headers className="product-price">
+                      <Headers className="product-amount">
                         {cartData.price}
                       </Headers>
                     </div>
@@ -47,8 +47,8 @@ export default class Cart extends Component {
                     <div className="color">
                       <Headers>COLOR</Headers>
                       <div className="Buttons">
-                        <Inputbutton className="color-button"/>
-                        <Inputbutton className="color-button1"/>
+                        <Inputbutton className="color-button" />
+                        <Inputbutton className="color-button1" />
                       </div>
                     </div>
                   </div>
@@ -63,14 +63,37 @@ export default class Cart extends Component {
                         className="selected-item"
                         src={cartData.product}
                         alt="cart-item"
+                        style={{ postion: "relative" }}
                       />
-                      <div>
+                      <div
+                        style={{
+                          display: "flex",
+                          flexDirection: "row",
+                          width: "6rem",
+                          // justifyContent: "space-evenly",
+                          alignItems: "flex-end",
+                          // position: "absolute",
+                        }}
+                      >
                         <img
                           src={cartData.back}
                           alt="back"
-                          style={{ Color: "black" }}
+                          style={{
+                            backgroundColor: "black",
+                            width: "12px",
+                            padding: "3px",
+                          }}
                         />
-                        <img src={cartData.froward} alt="forward" />
+                        <img
+                          src={cartData.froward}
+                          alt="forward"
+                          style={{
+                            backgroundColor: "black",
+                            width: "12px",
+                            padding: "3px",
+                            margin: "",
+                          }}
+                        />
                       </div>
                     </div>
                   </div>
